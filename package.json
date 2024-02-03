@@ -9,8 +9,8 @@
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
+    "build": "npm run build",
+    "start": "npm start"
   },
   "devDependencies": {
     "@parcel/packager-raw-url": "^2.11.0",

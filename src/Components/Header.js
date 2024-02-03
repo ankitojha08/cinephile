@@ -1,7 +1,7 @@
-import useWishlist from "../../utils/wishlistContext";
+import { useWishList } from "../../utils/wishlistContext";
 import { Link } from "react-router-dom";
 const Header = () => {
-  const { list, addItem, removeItem } = useWishlist();
+  const { list, addItem, removeItem } = useWishList();
 
   return (
     <div className='flex bg-zinc-900 h-24 border-b-[2px] border-zinc-400'>

@@ -38,6 +38,6 @@ export const WishlistProvider = ({ children }) => {
   );
 };
 
-export default useWishlist = () => {
+export const useWishList = () => {
   return useContext(WishlistContext);
 };

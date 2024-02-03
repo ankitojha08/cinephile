@@ -1,7 +1,7 @@
 import React from "react";
 import { img_url } from "./constants";
 import { Link } from "react-router-dom";
-import useWishList from "../../utils/wishlistContext";
+import { useWishList } from "../../utils/wishlistContext";
 
 const ShowCard = (props) => {
   const { list, addItem, removeItem } = useWishList();

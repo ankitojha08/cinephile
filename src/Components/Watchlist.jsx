@@ -1,5 +1,5 @@
 import React from "react";
-import useWishList from "../../utils/wishlistContext";
+import { useWishList } from "../../utils/wishlistContext";
 import { Link } from "react-router-dom";
 import { img_url } from "./constants";
 

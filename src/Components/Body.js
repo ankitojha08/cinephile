@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { LIST_POPULAR } from "./constants.js";
 import ShowCard from "./NotShowCard.js";
 import SearchBar from "./SearchBar.js";
-import useWishList from "../../utils/wishlistContext.js";
+import { useWishList } from "../../utils/wishlistContext.js";
 import PopularBar from "./PopularBar.js";
 import StateListGen from "./StateListGen.js";
 import Shimmer from "./Shimmer.js";
@@ -16,7 +16,9 @@ const Body = () => {
     async function fetchData() {
       const results = await StateListGen(popularState); // Fetch data
 
-      setRequiredList(results);
+      if (results && results.length > 0) {
+        setRequiredList(results);
+      }
     }
     setRequiredList([]);
     fetchData();
