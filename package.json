@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "browserslist": "^4.22.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.3"
@@ -9,8 +8,8 @@
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "build": "npm run build",
-    "start": "npm start"
+    "start": "parcel",
+    "build": "parcel build"
   },
   "devDependencies": {
     "@parcel/packager-raw-url": "^2.11.0",
