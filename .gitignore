@@ -1,0 +1,38 @@
+# Node modules
+node_modules/
+
+# Parcel cache
+.cache/
+.parcel-cache/
+
+# Build output
+build/
+dist/
+
+# Package managers
+package-lock.json
+yarn.lock
+
+# Testing
+coverage/
+jest/
+
+# IDE & editor files
+.vscode/
+.idea/
+.sublime-workspaces
+
+# Local environment variables
+.env
+
+# Tailwind specific
+# Ignore purged CSS files if using purgecss
+tailwind.config.js.map
+build/styles/tailwind.purge.css
+
+# Optional: ignore temporary files
+*.tmp
+*.log
+
+# Ignore any platform-specific files or folders
+.DS_Store
